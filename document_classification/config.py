@@ -1,0 +1,4 @@
+BATCH_SIZE = 1
+EPOCHS = 10
+DATA_DIR = "Dataset"
+NUM_CLASSES = 3
