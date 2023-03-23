@@ -1,10 +1,14 @@
 import os
 import json
 import torch
+import numpy as np
 import torch.nn.functional as F
+
+os
 
 class ModelTrainer:
 	def __init__(self, optimizer, checkpoints_dir = None, log_interval = 10):
+		os.environ["TOKENIZERS_PARALLELISM"] = "false"
 		self.optimizer = optimizer
 		self.best_val_acc = 0
 		self.checkpoints_dir = checkpoints_dir

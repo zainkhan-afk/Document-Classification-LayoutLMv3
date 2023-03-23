@@ -10,6 +10,7 @@ import config as cfg
 device = get_device()
 train_paths, train_labels, val_paths, val_labels, label_map = load_paths_and_split(cfg.DATA_DIR, val_split = 0.2)
 
+print("Loading Model")
 model = LayoutLMv3Wrapper(num_classes = cfg.NUM_CLASSES, device = device)
 model.set_labels(label_map)
 

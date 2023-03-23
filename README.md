@@ -10,7 +10,8 @@ Document-Classification-LayoutLMv3
 |--document_classifiation
 |	|-checkpoints
 |	|-Dataset
-|   |-all the .py files
+|	|-all the .py files
+|
 |
 |--test_imgs
 |--Dockerfile
@@ -19,13 +20,13 @@ Document-Classification-LayoutLMv3
 Once the checkpoints have been placed in the correct directories, the docker image must be built using the following command.
 
 ```
-docker build -t dl_assignment_px_zainullah_khan:latest .
+docker build -t zainkhan97/dl_assignment_px_zainullah_khan:latest .
 ```
 
 After the docker image has been built, it can be used for inference by first running the docker using the following command:
 
 ```
-docker run --name document_classification -itd -v d:/zain_dev/python_dev/Document-Classification-LayoutLMv3/document_classification:/document_classification -v d:/zain_dev/python_dev/Document-Classification-LayoutLMv3/test_imgs:/images_dir dl_assignment_px_zainullah_khan:latest
+docker run --name document_classification --gpus all -itd -v d:/zain_dev/python_dev/Document-Classification-LayoutLMv3/document_classification:/document_classification -v d:/zain_dev/python_dev/Document-Classification-LayoutLMv3/test_imgs:/images_dir zainkhan97/dl_assignment_px_zainullah_khan:latest
 ```
 
 Note that two volumes are mounted here. The first volume contains all the code required to run the mode, the second volume is a directory where all the test images must need to be placed.
