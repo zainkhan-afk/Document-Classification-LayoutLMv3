@@ -2,7 +2,7 @@
 
 ## Model Training and Inference
 
-In order to perform model inference please download the finetuned model and config from [here](https://drive.google.com/drive/folders/1zu6P7S-CDduk326grC90nej8DGbvLjCK?usp=sharing). Create a directory called 'checkpoints' inside the 'document_classification' directory and place the 'pytorch_model.bin' and 'config.json' files inside the 'checkpoints' directory. The directory structure should look like as follows:
+In order to perform model inference clone this repository and please download the finetuned model and config from [here](https://drive.google.com/drive/folders/1zu6P7S-CDduk326grC90nej8DGbvLjCK?usp=sharing). Create a directory called 'checkpoints' inside the 'document_classification' directory and place the 'pytorch_model.bin' and 'config.json' files inside the 'checkpoints' directory. The directory structure should look like as follows:
 
 ```
 Document-Classification-LayoutLMv3
